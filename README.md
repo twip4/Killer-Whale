@@ -1,10 +1,10 @@
 # Killer-Whale
 
-Projet de montre connectée avec fonction de haking.
+Projet de montre connectée avec fonction de pentest.
 
 La montre doit être discrète et doit ressembler à une vrais montre connectée.
 
-Une fois le mode hack activé la montre donne accès à un menu spécial.
+Une fois le mode pentest activé la montre donne accès à un menu spécial.
 
 Elle est liée à une application pour certaines fonctions de monitoring ou de calcul.
 
@@ -14,7 +14,7 @@ Liste des focntions clasique :
 * Alarme 
 * Minuteur
 
-Liste des fonctions de hack :
+Liste des fonctions de pentest :
 * Déconnection d'un wifi
 * HotSpot 
 * Man in the middle
