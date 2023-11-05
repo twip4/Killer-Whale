@@ -22,3 +22,8 @@ Liste des fonctions de hack :
 * Scan Radio (copie)
 * Brut force Wifi 
 * Si possible brouilleur
+
+
+[![logo.jpeg](docs/rendu/watch_2023-Nov-05_12-05-34PM-000_CustomizedView7822790882.png?fileId=103947#mimetype=image%2Fjpeg&hasPreview=true)](logo.jpeg?fileId=103947)
+
+[![logo.jpeg](docs/rendu/f61de213-f147-42f3-8d7c-76500aeb5fb6.PNG?fileId=103947#mimetype=image%2Fjpeg&hasPreview=true)](logo.jpeg?fileId=103947)
