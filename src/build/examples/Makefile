@@ -130,6 +130,30 @@ examples/fast:
 	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/build
 .PHONY : examples/fast
 
+Horloge.obj: Horloge.c.obj
+.PHONY : Horloge.obj
+
+# target to build an object file
+Horloge.c.obj:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/Horloge.c.obj
+.PHONY : Horloge.c.obj
+
+Horloge.i: Horloge.c.i
+.PHONY : Horloge.i
+
+# target to preprocess a source file
+Horloge.c.i:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/Horloge.c.i
+.PHONY : Horloge.c.i
+
+Horloge.s: Horloge.c.s
+.PHONY : Horloge.s
+
+# target to generate assembly for a file
+Horloge.c.s:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/Horloge.c.s
+.PHONY : Horloge.c.s
+
 ImageData.obj: ImageData.c.obj
 .PHONY : ImageData.obj
 
@@ -1187,6 +1211,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... examples"
+	@echo "... Horloge.obj"
+	@echo "... Horloge.i"
+	@echo "... Horloge.s"
 	@echo "... ImageData.obj"
 	@echo "... ImageData.i"
 	@echo "... ImageData.s"

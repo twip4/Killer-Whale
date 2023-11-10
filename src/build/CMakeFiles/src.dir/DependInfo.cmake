@@ -69,7 +69,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "/Users/paulbaudinot/Documents/Killer-Whale/src/./examples"
+  "/Users/paulbaudinot/Documents/Killer-Whale/src/./source"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/./lib/Config"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/./lib/Fonts"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/./lib/GUI"

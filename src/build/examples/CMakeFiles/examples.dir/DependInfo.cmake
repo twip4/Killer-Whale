@@ -115,6 +115,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/paulbaudinot/Documents/Killer-Whale/src/examples/Horloge.c" "examples/CMakeFiles/examples.dir/Horloge.c.obj" "gcc" "examples/CMakeFiles/examples.dir/Horloge.c.obj.d"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/examples/ImageData.c" "examples/CMakeFiles/examples.dir/ImageData.c.obj" "gcc" "examples/CMakeFiles/examples.dir/ImageData.c.obj.d"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/examples/LCD_1in28_test.c" "examples/CMakeFiles/examples.dir/LCD_1in28_test.c.obj" "gcc" "examples/CMakeFiles/examples.dir/LCD_1in28_test.c.obj.d"
   "/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c" "examples/CMakeFiles/examples.dir/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj" "gcc" "examples/CMakeFiles/examples.dir/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj.d"

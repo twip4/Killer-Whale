@@ -185,6 +185,6 @@
 /Users/paulbaudinot/Documents/Killer-Whale/src/build/lib/QMI8658/CMakeFiles/QMI8658.dir
 /Users/paulbaudinot/Documents/Killer-Whale/src/build/lib/QMI8658/CMakeFiles/edit_cache.dir
 /Users/paulbaudinot/Documents/Killer-Whale/src/build/lib/QMI8658/CMakeFiles/rebuild_cache.dir
-/Users/paulbaudinot/Documents/Killer-Whale/src/build/examples/CMakeFiles/examples.dir
-/Users/paulbaudinot/Documents/Killer-Whale/src/build/examples/CMakeFiles/edit_cache.dir
-/Users/paulbaudinot/Documents/Killer-Whale/src/build/examples/CMakeFiles/rebuild_cache.dir
+/Users/paulbaudinot/Documents/Killer-Whale/src/build/source/CMakeFiles/source.dir
+/Users/paulbaudinot/Documents/Killer-Whale/src/build/source/CMakeFiles/edit_cache.dir
+/Users/paulbaudinot/Documents/Killer-Whale/src/build/source/CMakeFiles/rebuild_cache.dir

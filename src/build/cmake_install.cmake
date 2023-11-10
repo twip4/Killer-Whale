@@ -46,7 +46,7 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("/Users/paulbaudinot/Documents/Killer-Whale/src/build/lib/LCD/cmake_install.cmake")
   include("/Users/paulbaudinot/Documents/Killer-Whale/src/build/lib/Touch/cmake_install.cmake")
   include("/Users/paulbaudinot/Documents/Killer-Whale/src/build/lib/QMI8658/cmake_install.cmake")
-  include("/Users/paulbaudinot/Documents/Killer-Whale/src/build/examples/cmake_install.cmake")
+  include("/Users/paulbaudinot/Documents/Killer-Whale/src/build/source/cmake_install.cmake")
 
 endif()
 

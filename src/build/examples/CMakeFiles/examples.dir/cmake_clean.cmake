@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/examples.dir/Horloge.c.obj"
+  "CMakeFiles/examples.dir/Horloge.c.obj.d"
   "CMakeFiles/examples.dir/ImageData.c.obj"
   "CMakeFiles/examples.dir/ImageData.c.obj.d"
   "CMakeFiles/examples.dir/LCD_1in28_test.c.obj"

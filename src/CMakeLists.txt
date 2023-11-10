@@ -12,9 +12,9 @@ add_subdirectory(./lib/GUI)
 add_subdirectory(./lib/LCD)
 add_subdirectory(./lib/Touch)
 add_subdirectory(./lib/QMI8658)
-add_subdirectory(./examples)
+add_subdirectory(./source)
 
-include_directories(./examples)
+include_directories(./source)
 include_directories(./lib/Config)
 include_directories(./lib/Fonts)
 include_directories(./lib/GUI)
@@ -29,4 +29,4 @@ pico_enable_stdio_uart(src 0)
 
 pico_add_extra_outputs(src)
 
-target_link_libraries(src examples LCD Touch QMI8658 GUI Fonts Config pico_stdlib hardware_spi hardware_i2c)
+target_link_libraries(src source LCD Touch QMI8658 GUI Fonts Config pico_stdlib hardware_spi hardware_i2c)

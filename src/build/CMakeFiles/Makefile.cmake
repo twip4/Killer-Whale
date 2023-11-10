@@ -14,7 +14,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.27.7/CMakeSystem.cmake"
   "elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake"
   "pico-sdk/src/rp2_common/pico_cyw43_driver/pioasm/tmp/PioasmBuild-mkdirs.cmake"
-  "/Users/paulbaudinot/Documents/Killer-Whale/src/examples/CMakeLists.txt"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/lib/Config/CMakeLists.txt"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/lib/Fonts/CMakeLists.txt"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/lib/GUI/CMakeLists.txt"
@@ -22,6 +21,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Users/paulbaudinot/Documents/Killer-Whale/src/lib/QMI8658/CMakeLists.txt"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/lib/Touch/CMakeLists.txt"
   "/Users/paulbaudinot/Documents/Killer-Whale/src/pico_sdk_import.cmake"
+  "/Users/paulbaudinot/Documents/Killer-Whale/src/source/CMakeLists.txt"
   "/Users/paulbaudinot/pico/pico-sdk/CMakeLists.txt"
   "/Users/paulbaudinot/pico/pico-sdk/cmake/Platform/PICO.cmake"
   "/Users/paulbaudinot/pico/pico-sdk/cmake/pico_pre_load_platform.cmake"
@@ -261,7 +261,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
   "lib/LCD/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/Touch/CMakeFiles/CMakeDirectoryInformation.cmake"
   "lib/QMI8658/CMakeFiles/CMakeDirectoryInformation.cmake"
-  "examples/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "source/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
@@ -279,5 +279,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "lib/LCD/CMakeFiles/LCD.dir/DependInfo.cmake"
   "lib/Touch/CMakeFiles/Touch.dir/DependInfo.cmake"
   "lib/QMI8658/CMakeFiles/QMI8658.dir/DependInfo.cmake"
-  "examples/CMakeFiles/examples.dir/DependInfo.cmake"
+  "source/CMakeFiles/source.dir/DependInfo.cmake"
   )

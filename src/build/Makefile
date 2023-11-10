@@ -286,17 +286,17 @@ QMI8658/fast:
 .PHONY : QMI8658/fast
 
 #=============================================================================
-# Target rules for targets named examples
+# Target rules for targets named source
 
 # Build rule for target.
-examples: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 examples
-.PHONY : examples
+source: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source
+.PHONY : source
 
 # fast build rule for target.
-examples/fast:
-	$(MAKE) $(MAKESILENT) -f examples/CMakeFiles/examples.dir/build.make examples/CMakeFiles/examples.dir/build
-.PHONY : examples/fast
+source/fast:
+	$(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/build
+.PHONY : source/fast
 
 Users/paulbaudinot/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj: Users/paulbaudinot/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.c.obj
 .PHONY : Users/paulbaudinot/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj
@@ -1894,7 +1894,7 @@ help:
 	@echo "... QMI8658"
 	@echo "... Touch"
 	@echo "... bs2_default"
-	@echo "... examples"
+	@echo "... source"
 	@echo "... src"
 	@echo "... Users/paulbaudinot/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.obj"
 	@echo "... Users/paulbaudinot/pico/pico-sdk/lib/tinyusb/src/class/audio/audio_device.i"

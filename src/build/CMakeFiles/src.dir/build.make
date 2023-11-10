@@ -1233,7 +1233,7 @@ src.elf: CMakeFiles/src.dir/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hard
 src.elf: CMakeFiles/src.dir/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_adc/adc.c.obj
 src.elf: CMakeFiles/src.dir/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_rtc/rtc.c.obj
 src.elf: CMakeFiles/src.dir/build.make
-src.elf: examples/libexamples.a
+src.elf: source/libsource.a
 src.elf: lib/LCD/libLCD.a
 src.elf: lib/Touch/libTouch.a
 src.elf: lib/QMI8658/libQMI8658.a
