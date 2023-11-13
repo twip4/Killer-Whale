@@ -7,15 +7,18 @@
 #define PI 3.14159265358979323846
 #include <unistd.h>
 
-void drawClockIndexes(int xCenter, int yCenter, int radius, int color);
+void drawClockIndexes(int xCenter, int yCenter, int radius, int color , float size, u_int8_t number);
 void drawHand(int xCenter, int yCenter, int length, double angle, int color, int taille);
-void drawClockHands(int xCenter, int yCenter, int hours, int minutes, int seconds, int color);
+void drawClockHands(int xCenter, int yCenter, int hours, int minutes, int seconds, int color, int colorSec);
+void drawPhisicalHour(int xCenter, int yCenter, int hours, int minutes, int seconds, int color, int size);
+void drawClockNumber(u_int8_t xSize, u_int8_t ySize, u_int8_t radius, int color);
 
 int Heure = 12 ;
-int Minute = 15;
+int Minute = 5;
 int Seconde = 0;
+int Millisc = 0;
 
-void Horloge(void){
+void Horloge(uint64_t last_time){
 if (DEV_Module_Init() != 0)
     {
         return;
@@ -39,43 +42,58 @@ if (DEV_Module_Init() != 0)
     Paint_SetRotate(ROTATE_0);
     Paint_Clear(WHITE);
 
-    drawClockIndexes(240/2, 240/2, 240/2, BLACK);
+    drawClockIndexes(LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2,GRAY,0.95,60);
+    drawClockIndexes(LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2,BLACK,0.9,12);
+
 
     LCD_1IN28_Display(BlackImage);
 
         while (true)
     {
-       drawClockHands(240/2,240/2,Heure,Minute,Seconde,BLACK);
-       LCD_1IN28_Display(BlackImage);
-       DEV_Delay_ms(1000);
-       drawClockHands(240/2,240/2,Heure,Minute,Seconde,WHITE);
-       Seconde++;
-       if (Seconde >= 60)
-       {
-        Seconde = 0;
-        Minute++;
-       }
-       if (Minute>= 60)
-       {
-        Minute = 0;
-        Heure++;
-       }
-       if (Heure>=24)
-       {
-        Heure=0;
-       }
+        uint64_t current_time = to_us_since_boot(get_absolute_time());
+        if (current_time - last_time >= 1000000) { // 1000000 microsecondes = 1000 millisecondes
+            drawPhisicalHour(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,Heure,Minute,Seconde,BLACK,0);
+            drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,Heure,Minute,Seconde,BLACK,RED);
+
+            // drawClockNumber(LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2,BLACK);
+
+            LCD_1IN28_Display(BlackImage);
+
+            drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,Heure,Minute,Seconde,WHITE,WHITE);
+            Seconde++;
+            if (Seconde >= 60) {
+                Seconde = 0;
+                Minute = (Minute + 1) % 60; // Incrémente la minute, et revient à 0 après 59
+            }
+
+            if (Minute == 0) { // Augmente l'heure seulement si les minutes viennent de revenir à 0
+                Heure = (Heure + 1) % 24; // Incrémente l'heure, et revient à 0 après 23
+            }
+
+            last_time = current_time; // Mettez à jour le dernier temps d'exécution
+        }
     }
 }
 
+// void drawClockNumber(u_int8_t xSize, u_int8_t ySize, u_int8_t radius, int color){
+//     int PosX[4] = {100,220,100,0};
+//     int PosY[4] = {0,100,220,100};
+//     for(int i = 0;i<=3;i++){
+//         printf("x : %d, y : %d\n", PosX[i],PosY[i]);
+//         char Cnumber = (char)i*3 ;
+//         Paint_DrawChar(PosX[i],PosY[i],Cnumber,&Font24,BLACK,WHITE);
+//     }
+// }
 
-void drawClockIndexes(int xCenter, int yCenter, int radius, int color) {
-    for (int i = 0; i < 12; i++) {
+
+void drawClockIndexes(int xCenter, int yCenter, int radius, int color , float size, u_int8_t number){
+    for (int i = 0; i < number; i++) {
         // Convertir l'angle en radians
-        double angle = i * (2 * PI / 12);
+        double angle = i * (2 * PI / number);
         
         // Calculer le point de départ (à l'intérieur du cercle)
-        int xStart = xCenter + (int)(radius * 0.9 * cos(angle));
-        int yStart = yCenter + (int)(radius * 0.9 * sin(angle));
+        int xStart = xCenter + (int)(radius * size * cos(angle));
+        int yStart = yCenter + (int)(radius * size * sin(angle));
         
         // Calculer le point de fin (sur le bord du cercle)
         int xEnd = xCenter + (int)(radius * cos(angle));
@@ -103,19 +121,32 @@ void drawHand(int xCenter, int yCenter, int length, double angle, int color, int
     Paint_DrawLine(xCenter, yCenter, xEnd, yEnd, color,  pixelSize, LINE_STYLE_SOLID);
 }
 
-void drawClockHands(int xCenter, int yCenter, int hours, int minutes, int seconds, int color) {
+void drawClockHands(int xCenter, int yCenter, int hours, int minutes, int seconds, int color, int colorSec) {
     // Angle et longueur pour l'aiguille des heures
-    double hourAngle = ((hours % 12) + (minutes / 60.0)) * (2 * PI / 12) - (PI / 2);
-    int hourLength = 50; // La longueur de l'aiguille des heures
+    double hourAngle = (hours % 12) * (2 * PI / 12) - (PI / 2);
+    u_int8_t hourLength = 50; // La longueur de l'aiguille des heures
     drawHand(xCenter, yCenter, hourLength, hourAngle, color,3);
 
     // Angle et longueur pour l'aiguille des minutes
-    double minuteAngle = (minutes + (seconds / 60.0)) * (2 * PI / 60) - (PI / 2);
-    int minuteLength = 70; // La longueur de l'aiguille des minutes
+    double minuteAngle = minutes * (2 * PI / 60) - (PI / 2);
+    u_int8_t minuteLength = 70; // La longueur de l'aiguille des minutes
     drawHand(xCenter, yCenter, minuteLength, minuteAngle, color,2);
 
     // Angle et longueur pour l'aiguille des secondes
     double secondAngle = seconds * (2 * PI / 60) - (PI / 2);
-    int secondLength = 90; // La longueur de l'aiguille des secondes
-    drawHand(xCenter, yCenter, secondLength, secondAngle, color,1);
+    u_int8_t secondLength = 90; // La longueur de l'aiguille des secondes
+    drawHand(xCenter, yCenter, secondLength, secondAngle, colorSec,1);
+    
+    double antiSecondAngle = seconds * (2 * PI / 60) - (PI / 2);
+    int8_t antiSecondLength = -20; // La longueur de l'aiguille des secondes
+    drawHand(xCenter, yCenter, antiSecondLength, antiSecondAngle, colorSec,1);
+
+    Paint_DrawCircle(xCenter, yCenter,3,colorSec,DOT_PIXEL_1X1,DRAW_FILL_FULL);
+}
+
+void drawPhisicalHour(int xStart, int yStart, int hours, int minutes, int seconds, int color, int size) {
+    char Cheure[10];
+    sprintf(Cheure, "%02d:%02d:%02d\0", hours,minutes,seconds);
+    // printf("%s\n",Cheure);
+    Paint_DrawString_EN(55,150,Cheure,&Font24,BLACK,WHITE);
 }

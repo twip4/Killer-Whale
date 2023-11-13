@@ -12,5 +12,7 @@
         ".vscode/Pico-W-Stub"
     ],
     "micropico.syncFolder": "",
-    "micropico.openOnStart": true
+    "micropico.openOnStart": true,
+    "cmake.sourceDirectory": "/Users/paulbaudinot/Documents/Killer-Whale/src",
+    "C_Cpp.default.compilerPath": "/opt/homebrew/bin/arm-none-eabi-gcc"
 }

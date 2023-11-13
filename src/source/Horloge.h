@@ -15,6 +15,6 @@
 #define PI 3.14159265358979323846
 #include <unistd.h>
 
-void Horloge(void);
+void Horloge(uint64_t last_time);
 
 #endif
