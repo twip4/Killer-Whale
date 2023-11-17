@@ -14,5 +14,9 @@
     "micropico.syncFolder": "",
     "micropico.openOnStart": true,
     "cmake.sourceDirectory": "/Users/paulbaudinot/Documents/Killer-Whale/src",
-    "C_Cpp.default.compilerPath": "/opt/homebrew/bin/arm-none-eabi-gcc"
+    "C_Cpp.default.compilerPath": "/opt/homebrew/bin/arm-none-eabi-gcc",
+    "files.associations": {
+        "math.h": "c",
+        "unistd.h": "c"
+    }
 }

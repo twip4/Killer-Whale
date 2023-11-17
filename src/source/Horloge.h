@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
 #include "hardware/gpio.h"
-#include "LCD_Test.h"
 #include "LCD_1in28.h"
 #include "QMI8658.h"
 #include <stdio.h>
@@ -15,6 +14,7 @@
 #define PI 3.14159265358979323846
 #include <unistd.h>
 
-void Horloge(uint64_t last_time);
+void Horloge_init(uint16_t *Image);
+void Horloge_display(uint16_t *Image,uint32_t Heure,uint32_t Minute,uint32_t Seconde,u_int8_t mode);
 
 #endif
