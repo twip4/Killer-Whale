@@ -127,6 +127,7 @@ CST816S CST816S_Get_Point()
 
     return Touch_CTS816;
 }
+
 uint8_t CST816S_Get_Gesture(void)
 {
     uint8_t gesture;

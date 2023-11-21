@@ -1,6 +1,8 @@
 file(REMOVE_RECURSE
   "CMakeFiles/source.dir/Horloge.c.obj"
   "CMakeFiles/source.dir/Horloge.c.obj.d"
+  "CMakeFiles/source.dir/Menu.c.obj"
+  "CMakeFiles/source.dir/Menu.c.obj.d"
   "CMakeFiles/source.dir/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj"
   "CMakeFiles/source.dir/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj.d"
   "CMakeFiles/source.dir/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj"

@@ -154,6 +154,30 @@ Horloge.c.s:
 	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Horloge.c.s
 .PHONY : Horloge.c.s
 
+Menu.obj: Menu.c.obj
+.PHONY : Menu.obj
+
+# target to build an object file
+Menu.c.obj:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Menu.c.obj
+.PHONY : Menu.c.obj
+
+Menu.i: Menu.c.i
+.PHONY : Menu.i
+
+# target to preprocess a source file
+Menu.c.i:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Menu.c.i
+.PHONY : Menu.c.i
+
+Menu.s: Menu.c.s
+.PHONY : Menu.s
+
+# target to generate assembly for a file
+Menu.c.s:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Menu.c.s
+.PHONY : Menu.c.s
+
 Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.obj: Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.obj
 
@@ -1166,6 +1190,9 @@ help:
 	@echo "... Horloge.obj"
 	@echo "... Horloge.i"
 	@echo "... Horloge.s"
+	@echo "... Menu.obj"
+	@echo "... Menu.i"
+	@echo "... Menu.s"
 	@echo "... Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.s"

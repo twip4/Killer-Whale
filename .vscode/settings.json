@@ -17,6 +17,9 @@
     "C_Cpp.default.compilerPath": "/opt/homebrew/bin/arm-none-eabi-gcc",
     "files.associations": {
         "math.h": "c",
-        "unistd.h": "c"
+        "unistd.h": "c",
+        "lcd_1in28.h": "c",
+        "stdio.h": "c",
+        "horloge.h": "c"
     }
 }

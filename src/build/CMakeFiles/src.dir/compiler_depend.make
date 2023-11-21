@@ -2858,6 +2858,8 @@ CMakeFiles/src.dir/main.c.obj: /Users/paulbaudinot/Documents/Killer-Whale/src/ma
   /Users/paulbaudinot/Documents/Killer-Whale/src/lib/QMI8658/QMI8658.h \
   /Users/paulbaudinot/Documents/Killer-Whale/src/lib/Touch/CST816S.h \
   /Users/paulbaudinot/Documents/Killer-Whale/src/source/Horloge.h \
+  /Users/paulbaudinot/Documents/Killer-Whale/src/source/Menu.h \
+  /Users/paulbaudinot/Documents/Killer-Whale/src/source/config.h \
   generated/pico_base/pico/config_autogen.h \
   generated/pico_base/pico/version.h \
   /Users/paulbaudinot/pico/pico-sdk/src/boards/include/boards/pico.h \
@@ -2912,6 +2914,8 @@ CMakeFiles/src.dir/main.c.obj: /Users/paulbaudinot/Documents/Killer-Whale/src/ma
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pwm.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pwm.h:
+
+/Users/paulbaudinot/Documents/Killer-Whale/src/source/config.h:
 
 /Users/paulbaudinot/Documents/Killer-Whale/src/source/Horloge.h:
 
@@ -3344,6 +3348,8 @@ generated/pico_base/pico/version.h:
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
 
 /Users/paulbaudinot/pico/pico-sdk/lib/tinyusb/src/class/hid/hid.h:
+
+/Users/paulbaudinot/Documents/Killer-Whale/src/source/Menu.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h:
 

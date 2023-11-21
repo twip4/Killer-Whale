@@ -2920,6 +2920,8 @@ CMakeFiles/src.dir/main.c.obj
  /Users/paulbaudinot/Documents/Killer-Whale/src/lib/QMI8658/QMI8658.h
  /Users/paulbaudinot/Documents/Killer-Whale/src/lib/Touch/CST816S.h
  /Users/paulbaudinot/Documents/Killer-Whale/src/source/Horloge.h
+ /Users/paulbaudinot/Documents/Killer-Whale/src/source/Menu.h
+ /Users/paulbaudinot/Documents/Killer-Whale/src/source/config.h
  /Users/paulbaudinot/Documents/Killer-Whale/src/build/generated/pico_base/pico/config_autogen.h
  /Users/paulbaudinot/Documents/Killer-Whale/src/build/generated/pico_base/pico/version.h
  /Users/paulbaudinot/pico/pico-sdk/src/boards/include/boards/pico.h

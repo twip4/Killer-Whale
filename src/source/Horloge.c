@@ -45,10 +45,11 @@ static void drawHand(int xCenter, int yCenter, int length, double angle, int col
         // Ajoutez d'autres cas si nécessaire
         default: pixelSize = DOT_PIXEL_1X1; // Valeur par défaut
     }
-    printf("print %d %d %d %d", xCenter, yCenter, xEnd, yEnd);
+    //printf("print %d %d %d %d", xCenter, yCenter, xEnd, yEnd);
     Paint_DrawLine(xCenter, yCenter, xEnd, yEnd, color,  pixelSize, LINE_STYLE_SOLID);
 }
 
+// dessine les aiguilles
 static void drawClockHands(int xCenter, int yCenter, int hours, int minutes, int seconds, int color, int colorSec) {
     // Angle et longueur pour l'aiguille des heures
     double hourAngle = (hours % 12) * (2 * PI / 12) - (PI / 2);
@@ -72,19 +73,21 @@ static void drawClockHands(int xCenter, int yCenter, int hours, int minutes, int
     Paint_DrawCircle(xCenter, yCenter,3,colorSec,DOT_PIXEL_1X1,DRAW_FILL_FULL);
 }
 
+// dessine l'heure en chiffre 
 static void drawPhisicalHour(int xStart, int yStart, int hours, int minutes, int seconds, int color, int size) {
     char Cheure[10];
+    //convertion int to str
     sprintf(Cheure, "%02d:%02d:%02d\0", hours,minutes,seconds);
     // printf("%s\n",Cheure);
     Paint_DrawString_EN(55,150,Cheure,&Font24,BLACK,WHITE);
 }
 
+// fonction d'init de l'affichage horloge 
 void Horloge_init(uint16_t *Image){
         // /*1.Create a new image cache named IMAGE_RGB and fill it with white*/
     Paint_SetScale(65);
     Paint_Clear(WHITE);
     Paint_SetRotate(ROTATE_0);
-    Paint_Clear(WHITE);
 
     drawClockIndexes(LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2,GRAY,0.95,60);
     drawClockIndexes(LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2, LCD_1IN28_HEIGHT/2,BLACK,0.9,12);
@@ -92,35 +95,21 @@ void Horloge_init(uint16_t *Image){
     LCD_1IN28_Display(Image);
 }
 
-void Horloge_display(uint16_t *Image,uint32_t Heure,uint32_t Minute,uint32_t Seconde,u_int8_t mode){
+// focntion qui gere le dynamique de l'horloge 
+void Horloge_display(uint16_t *Image,uint32_t *TabTime,uint32_t *OldTabTime,u_int8_t mode){
 
-    uint32_t OldHeure = Heure ;
-    uint32_t OldMinute = Minute;
-    uint32_t OldSeconde = Seconde;
-
-    OldSeconde--;
-
-    if (OldSeconde <= 0) {
-        OldSeconde = 60;
-        OldMinute--; // Decrémente la minute, et revient à 60 après 0
-    }
-    if (OldMinute <= 0) {
-        OldMinute = 59;
-        OldHeure--;
-    }
-    if (OldHeure <= 0){
-        OldHeure = 24;
-    }
     // clear old clock hands
-    drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,OldHeure,OldMinute,OldSeconde,WHITE,WHITE); 
+    drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,OldTabTime[0],OldTabTime[1],OldTabTime[2],WHITE,WHITE); 
 
+    // mode avec que les aiguilles
     if(mode == 1){
-        drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,Heure,Minute,Seconde,BLACK,RED);
+        drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,TabTime[0],TabTime[1],TabTime[2],BLACK,RED);
     }
 
+    // mode avec l'heure en chiffre en plus 
     if(mode == 2){
-        drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,Heure,Minute,Seconde,BLACK,RED);
-        drawPhisicalHour(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,Heure,Minute,Seconde,BLACK,0);
+        drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,TabTime[0],TabTime[1],TabTime[2],BLACK,RED);
+        drawPhisicalHour(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,TabTime[0],TabTime[1],TabTime[2],BLACK,0);
     }
     // draw number 
     Paint_DrawString_EN(205,110,"3",&Font24,BLACK,WHITE);
