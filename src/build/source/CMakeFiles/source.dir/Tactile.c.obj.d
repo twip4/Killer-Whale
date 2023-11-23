@@ -1,5 +1,5 @@
-CMakeFiles/src.dir/main.c.obj: \
- /Users/paulbaudinot/Documents/Killer-Whale/src/main.c \
+source/CMakeFiles/source.dir/Tactile.c.obj: \
+ /Users/paulbaudinot/Documents/Killer-Whale/src/source/Tactile.c \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdio.h \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/newlib.h \
@@ -58,26 +58,12 @@ CMakeFiles/src.dir/main.c.obj: \
  /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/uart.h \
  /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
- /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_stdio_usb/include/pico/stdio_usb.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./source/Menu.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/unistd.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/unistd.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/types.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/endian.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_endian.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/select.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_sigset.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_timeval.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/timespec.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_timespec.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_pthreadtypes.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/sched.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/types.h \
+ /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /Users/paulbaudinot/Documents/Killer-Whale/src/source/../lib/Touch/CST816S.h \
+ /Users/paulbaudinot/Documents/Killer-Whale/src/source/../lib/Config/DEV_Config.h \
  /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_adc/include/hardware/adc.h \
  /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/adc.h \
  /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/adc.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./lib/LCD/LCD_1in28.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./lib/Config/DEV_Config.h \
  /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_spi/include/hardware/spi.h \
  /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h \
  /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/spi.h \
@@ -90,12 +76,4 @@ CMakeFiles/src.dir/main.c.obj: \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdlib.h \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/alloca.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./lib/Touch/CST816S.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./lib/GUI/GUI_Paint.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./lib/GUI/../Fonts/fonts.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./source/Images.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./source/Horloge.h \
- /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/math.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./lib/Config/Debug.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./lib/QMI8658/QMI8658.h \
- /Users/paulbaudinot/Documents/Killer-Whale/src/./source/TouchData.h
+ /Users/paulbaudinot/Documents/Killer-Whale/src/source/tactile.h

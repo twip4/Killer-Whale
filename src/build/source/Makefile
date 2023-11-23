@@ -154,6 +154,30 @@ Horloge.c.s:
 	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Horloge.c.s
 .PHONY : Horloge.c.s
 
+Images.obj: Images.c.obj
+.PHONY : Images.obj
+
+# target to build an object file
+Images.c.obj:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Images.c.obj
+.PHONY : Images.c.obj
+
+Images.i: Images.c.i
+.PHONY : Images.i
+
+# target to preprocess a source file
+Images.c.i:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Images.c.i
+.PHONY : Images.c.i
+
+Images.s: Images.c.s
+.PHONY : Images.s
+
+# target to generate assembly for a file
+Images.c.s:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Images.c.s
+.PHONY : Images.c.s
+
 Menu.obj: Menu.c.obj
 .PHONY : Menu.obj
 
@@ -177,6 +201,30 @@ Menu.s: Menu.c.s
 Menu.c.s:
 	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/Menu.c.s
 .PHONY : Menu.c.s
+
+TouchData.obj: TouchData.c.obj
+.PHONY : TouchData.obj
+
+# target to build an object file
+TouchData.c.obj:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/TouchData.c.obj
+.PHONY : TouchData.c.obj
+
+TouchData.i: TouchData.c.i
+.PHONY : TouchData.i
+
+# target to preprocess a source file
+TouchData.c.i:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/TouchData.c.i
+.PHONY : TouchData.c.i
+
+TouchData.s: TouchData.c.s
+.PHONY : TouchData.s
+
+# target to generate assembly for a file
+TouchData.c.s:
+	cd /Users/paulbaudinot/Documents/Killer-Whale/src/build && $(MAKE) $(MAKESILENT) -f source/CMakeFiles/source.dir/build.make source/CMakeFiles/source.dir/TouchData.c.s
+.PHONY : TouchData.c.s
 
 Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.obj: Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.obj
@@ -1190,9 +1238,15 @@ help:
 	@echo "... Horloge.obj"
 	@echo "... Horloge.i"
 	@echo "... Horloge.s"
+	@echo "... Images.obj"
+	@echo "... Images.i"
+	@echo "... Images.s"
 	@echo "... Menu.obj"
 	@echo "... Menu.i"
 	@echo "... Menu.s"
+	@echo "... TouchData.obj"
+	@echo "... TouchData.i"
+	@echo "... TouchData.s"
 	@echo "... Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.s"

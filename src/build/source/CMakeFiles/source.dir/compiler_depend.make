@@ -47,7 +47,6 @@ source/CMakeFiles/source.dir/Horloge.c.obj: /Users/paulbaudinot/Documents/Killer
   /Users/paulbaudinot/Documents/Killer-Whale/src/lib/Fonts/fonts.h \
   /Users/paulbaudinot/Documents/Killer-Whale/src/lib/GUI/GUI_Paint.h \
   /Users/paulbaudinot/Documents/Killer-Whale/src/lib/LCD/LCD_1in28.h \
-  /Users/paulbaudinot/Documents/Killer-Whale/src/source/config.h \
   /Users/paulbaudinot/pico/pico-sdk/src/boards/include/boards/pico.h \
   /Users/paulbaudinot/pico/pico-sdk/src/common/pico_base/include/pico.h \
   /Users/paulbaudinot/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
@@ -94,6 +93,28 @@ source/CMakeFiles/source.dir/Horloge.c.obj: /Users/paulbaudinot/Documents/Killer
   /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
   /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
 
+source/CMakeFiles/source.dir/Images.c.obj: /Users/paulbaudinot/Documents/Killer-Whale/src/source/Images.c \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_types.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/newlib.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdio.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_types.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/cdefs.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/config.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/lock.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/reent.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/stdio.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdarg.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stddef.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h
+
 source/CMakeFiles/source.dir/Menu.c.obj: /Users/paulbaudinot/Documents/Killer-Whale/src/source/Menu.c \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
@@ -106,7 +127,6 @@ source/CMakeFiles/source.dir/Menu.c.obj: /Users/paulbaudinot/Documents/Killer-Wh
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/ieeefp.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/types.h \
-  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/math.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/newlib.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdint.h \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdio.h \
@@ -141,7 +161,8 @@ source/CMakeFiles/source.dir/Menu.c.obj: /Users/paulbaudinot/Documents/Killer-Wh
   /Users/paulbaudinot/Documents/Killer-Whale/src/lib/GUI/GUI_Paint.h \
   /Users/paulbaudinot/Documents/Killer-Whale/src/lib/LCD/LCD_1in28.h \
   /Users/paulbaudinot/Documents/Killer-Whale/src/lib/Touch/CST816S.h \
-  /Users/paulbaudinot/Documents/Killer-Whale/src/source/config.h \
+  /Users/paulbaudinot/Documents/Killer-Whale/src/source/Images.h \
+  /Users/paulbaudinot/Documents/Killer-Whale/src/source/TouchData.h \
   /Users/paulbaudinot/pico/pico-sdk/src/boards/include/boards/pico.h \
   /Users/paulbaudinot/pico/pico-sdk/src/common/pico_base/include/pico.h \
   /Users/paulbaudinot/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
@@ -187,6 +208,17 @@ source/CMakeFiles/source.dir/Menu.c.obj: /Users/paulbaudinot/Documents/Killer-Wh
   /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h \
   /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h \
   /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h
+
+source/CMakeFiles/source.dir/TouchData.c.obj: /Users/paulbaudinot/Documents/Killer-Whale/src/source/TouchData.c \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_newlib_version.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdint.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_intsup.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_stdint.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/features.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdbool.h \
+  /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/stdint.h \
+  /Users/paulbaudinot/Documents/Killer-Whale/src/source/TouchData.h
 
 source/CMakeFiles/source.dir/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj: /Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c \
   /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h \
@@ -1822,6 +1854,10 @@ source/CMakeFiles/source.dir/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pic
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/cassert:
 
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h:
+
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h:
+
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_time.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp:
@@ -1908,27 +1944,17 @@ source/CMakeFiles/source.dir/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pic
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/xosc.h:
 
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/newlib.h:
-
-/Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/rtc.h:
-
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pll.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_sigset.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c:
 
-/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
-
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/rtc.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/resets.h:
-
-/Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
-
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/bits/std_abs.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h:
 
@@ -1982,6 +2008,16 @@ source/CMakeFiles/source.dir/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pic
 
 /Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/include/pico/critical_section.h:
 
+/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_float/float_math.c:
+
+/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_double/include/pico/double.h:
+
+/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:
+
+/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c:
+
+/Users/paulbaudinot/Documents/Killer-Whale/src/source/TouchData.c:
+
 /Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/mutex.c:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/lib/gcc/arm-none-eabi/13.2.1/include/syslimits.h:
@@ -1989,6 +2025,10 @@ source/CMakeFiles/source.dir/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pic
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_stdio/include/pico/stdio.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_platform/include/pico/platform.h:
+
+/Users/paulbaudinot/Documents/Killer-Whale/src/lib/Touch/CST816S.h:
+
+/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_pwm/include/hardware/pwm.h:
 
@@ -2023,6 +2063,10 @@ source/CMakeFiles/source.dir/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pic
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/inttypes.h:
+
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/bits/std_abs.h:
+
+/Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/sio.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/common/pico_time/include/pico/time.h:
 
@@ -2060,6 +2104,8 @@ generated/pico_base/pico/config_autogen.h:
 
 generated/pico_base/pico/version.h:
 
+/Users/paulbaudinot/Documents/Killer-Whale/src/source/Images.c:
+
 /Users/paulbaudinot/pico/pico-sdk/src/common/pico_base/include/pico/error.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/types.h:
@@ -2070,27 +2116,11 @@ generated/pico_base/pico/version.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/common/pico_base/include/pico/config.h:
 
-/Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/newlib.h:
 
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h:
+/Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/rtc.h:
 
-/Users/paulbaudinot/pico/pico-sdk/src/common/pico_time/include/pico/timeout_helper.h:
-
-/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h:
-
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/sched.h:
-
-/Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
-
-/Users/paulbaudinot/pico/pico-sdk/src/boards/include/boards/pico.h:
-
-/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_float/float_math.c:
-
-/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_double/include/pico/double.h:
-
-/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c:
-
-/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/critical_section.c:
+/Users/paulbaudinot/Documents/Killer-Whale/src/source/Images.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/common/pico_util/datetime.c:
 
@@ -2099,6 +2129,8 @@ generated/pico_base/pico/version.h:
 /Users/paulbaudinot/Documents/Killer-Whale/src/source/Menu.c:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/spi.h:
+
+/Users/paulbaudinot/Documents/Killer-Whale/src/source/TouchData.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_endian.h:
 
@@ -2130,6 +2162,8 @@ generated/pico_base/pico/version.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/types.h:
 
+/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_claim/include/hardware/claim.h:
+
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/stdint.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_xosc/include/hardware/xosc.h:
@@ -2156,19 +2190,25 @@ generated/pico_base/pico/version.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/iobank0.h:
 
-/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
+/Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h:
 
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/cpu_defines.h:
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/_ansi.h:
+
+/Users/paulbaudinot/pico/pico-sdk/src/common/pico_time/include/pico/timeout_helper.h:
+
+/Users/paulbaudinot/pico/pico-sdk/src/common/pico_sync/include/pico/sync.h:
+
+/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/sched.h:
+
+/Users/paulbaudinot/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/interp.h:
+
+/Users/paulbaudinot/pico/pico-sdk/src/boards/include/boards/pico.h:
+
+/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/sys/_timeval.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/common/pico_base/include/pico.h:
-
-/Users/paulbaudinot/Documents/Killer-Whale/src/lib/Touch/CST816S.h:
-
-/Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_timer/include/hardware/timer.h:
-
-/Users/paulbaudinot/Documents/Killer-Whale/src/source/config.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c:
 
@@ -2217,8 +2257,6 @@ generated/pico_base/pico/version.h:
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h:
 
 /Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/machine/_default_types.h:
-
-/Applications/ArmGNUToolchain/13.2.Rel1/arm-none-eabi/arm-none-eabi/include/c++/13.2.1/arm-none-eabi/thumb/v6-m/nofp/bits/os_defines.h:
 
 /Users/paulbaudinot/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c:
 

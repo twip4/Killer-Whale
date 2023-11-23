@@ -20,6 +20,10 @@
         "unistd.h": "c",
         "lcd_1in28.h": "c",
         "stdio.h": "c",
-        "horloge.h": "c"
-    }
+        "horloge.h": "c",
+        "compare": "cpp",
+        "dev_config.h": "c",
+        "touchdata.h": "c"
+    },
+    "cmake.configureOnOpen": false
 }

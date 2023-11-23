@@ -1645,7 +1645,7 @@ CMakeFiles/src.dir/all: source/CMakeFiles/source.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/src.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 97
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 98
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/src.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
 .PHONY : CMakeFiles/src.dir/rule
@@ -1718,12 +1718,12 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/clean:
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles --progress-num=68 "Built target bs2_default_bin"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles --progress-num= "Built target bs2_default_bin"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/all
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/rule
@@ -1744,12 +1744,12 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/all
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/depend
 	$(MAKE) $(MAKESILENT) -f pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build.make pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles --progress-num= "Built target bs2_default_padded_checksummed_asm"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles --progress-num=68 "Built target bs2_default_padded_checksummed_asm"
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 
 # Build rule for subdir invocation for target.
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 1
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/rule
@@ -1827,7 +1827,7 @@ lib/Config/CMakeFiles/Config.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeF
 
 # Build rule for subdir invocation for target.
 lib/Config/CMakeFiles/Config.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/Config/CMakeFiles/Config.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
 .PHONY : lib/Config/CMakeFiles/Config.dir/rule
@@ -1880,7 +1880,7 @@ lib/GUI/CMakeFiles/GUI.dir/all: lib/Config/CMakeFiles/Config.dir/all
 
 # Build rule for subdir invocation for target.
 lib/GUI/CMakeFiles/GUI.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/GUI/CMakeFiles/GUI.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
 .PHONY : lib/GUI/CMakeFiles/GUI.dir/rule
@@ -1907,7 +1907,7 @@ lib/LCD/CMakeFiles/LCD.dir/all: lib/Config/CMakeFiles/Config.dir/all
 
 # Build rule for subdir invocation for target.
 lib/LCD/CMakeFiles/LCD.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 25
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/LCD/CMakeFiles/LCD.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
 .PHONY : lib/LCD/CMakeFiles/LCD.dir/rule
@@ -1929,12 +1929,12 @@ lib/Touch/CMakeFiles/Touch.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFil
 lib/Touch/CMakeFiles/Touch.dir/all: lib/Config/CMakeFiles/Config.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/Touch/CMakeFiles/Touch.dir/build.make lib/Touch/CMakeFiles/Touch.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/Touch/CMakeFiles/Touch.dir/build.make lib/Touch/CMakeFiles/Touch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles --progress-num=56,57,58,59,60,61,62,63,64,65,66,67 "Built target Touch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles --progress-num=55,56,57,58,59,60,61,62,63,64,65,66,67 "Built target Touch"
 .PHONY : lib/Touch/CMakeFiles/Touch.dir/all
 
 # Build rule for subdir invocation for target.
 lib/Touch/CMakeFiles/Touch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 24
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 26
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lib/Touch/CMakeFiles/Touch.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
 .PHONY : lib/Touch/CMakeFiles/Touch.dir/rule
@@ -1956,7 +1956,7 @@ lib/QMI8658/CMakeFiles/QMI8658.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMak
 lib/QMI8658/CMakeFiles/QMI8658.dir/all: lib/Config/CMakeFiles/Config.dir/all
 	$(MAKE) $(MAKESILENT) -f lib/QMI8658/CMakeFiles/QMI8658.dir/build.make lib/QMI8658/CMakeFiles/QMI8658.dir/depend
 	$(MAKE) $(MAKESILENT) -f lib/QMI8658/CMakeFiles/QMI8658.dir/build.make lib/QMI8658/CMakeFiles/QMI8658.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51,52,53,54,55 "Built target QMI8658"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles --progress-num=43,44,45,46,47,48,49,50,51,52,53,54 "Built target QMI8658"
 .PHONY : lib/QMI8658/CMakeFiles/QMI8658.dir/all
 
 # Build rule for subdir invocation for target.
@@ -1991,7 +1991,7 @@ source/CMakeFiles/source.dir/all: lib/QMI8658/CMakeFiles/QMI8658.dir/all
 
 # Build rule for subdir invocation for target.
 source/CMakeFiles/source.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 62
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 63
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 source/CMakeFiles/source.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/paulbaudinot/Documents/Killer-Whale/src/build/CMakeFiles 0
 .PHONY : source/CMakeFiles/source.dir/rule

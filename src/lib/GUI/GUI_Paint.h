@@ -2,6 +2,7 @@
 #define __GUI_PAINT_H
 
 #include "DEV_Config.h"
+#include <stdint.h>
 #include "../Fonts/fonts.h"
 
 /**
@@ -145,7 +146,7 @@ void Paint_DrawBitMap(const unsigned char* image_buffer);
 void Paint_DrawBitMap_Block(const unsigned char* image_buffer, uint8_t Region);
 
 void Paint_DrawImage(const unsigned char *image, uint16_t xStart, uint16_t yStart, uint16_t W_Image, uint16_t H_Image) ;
-void Paint_DrawImage1(const unsigned char *image, uint16_t xStart, uint16_t yStart, uint16_t W_Image, uint16_t H_Image);
+void Paint_DrawImage1(const unsigned int *image, uint16_t xStart, uint16_t yStart, uint16_t W_Image, uint16_t H_Image);
  void Paint_BmpWindows(unsigned char x,unsigned char y,const unsigned char *pBmp,\
 					unsigned char chWidth,unsigned char chHeight);
 

@@ -8,9 +8,10 @@
 #include "CST816S.h"
 #include "hardware/adc.h"
 #include "QMI8658.h"
+#include "TouchData.h"
 
-static void init_lcd();
-static void Update_time();
+void init_lcd();
+bool Update_time(struct repeating_timer *t);
 void Touch_INT_callback(uint gpio, uint32_t events);
 
 uint8_t flag = 0;
@@ -37,25 +38,36 @@ int main(void){
 
     // init time
     uint64_t last_time = to_us_since_boot(get_absolute_time());
-
-    // init touch 
+    
+    // init touch
     CST816S_init(CST816S_Gesture_Mode);
     DEV_KEY_Config(Touch_INT_PIN);
-     // Initialiser le capteur tactile en mode point
     DEV_IRQ_SET(Touch_INT_PIN, GPIO_IRQ_EDGE_RISE, &Touch_INT_callback);
-    //gpio_set_irq_enabled_with_callback(Touch_INT_PIN, GPIO_IRQ_EDGE_RISE, true, &Touch_INT_callback);
 
+    // init callback fonction for update time in background
+    repeating_timer_t timer;
+    bool success = add_repeating_timer_ms(1000, Update_time, NULL, &timer);
+    if (success) {
+        printf("callback time init !!! \n");
+    }
     // boucle temporelle
     while(true)
     {   
-        //tight_loop_contents();
-        uint64_t current_time = to_us_since_boot(get_absolute_time());
-        // toute les secondes
-        if (current_time - last_time >= 1000000) {
-            Update_time();
-            if (flag == 0){
-                if (reset == 1){
-                    // init horloge
+        if (CTouch.isTouched) {
+            if (CTouch.gesture == CST816S_Gesture_Long_Press){
+                if (flag == 1){
+                    flag = 0;
+                    reset = 1;
+                }
+                else{
+                    flag = 1;
+                }
+            }
+            CTouch.isTouched = false;
+        }
+
+        if (flag == 0){
+            if (reset == 1){
                     printf("Horloge page \n");
                     Horloge_init(Image);
                     reset = 0;
@@ -63,24 +75,17 @@ int main(void){
                 Horloge_display(Image,TabTime,OldTabTime,1);
             }
             if (flag == 1){
-                if (reset == 1){
-                    printf("Menu page \n");
-                    Menu_display(Image,1);
-                    reset = 0;
-                }
-                Menu_display(Image,2);
-                //printf("ok");
-            }
-            // printf("%02d:%02d:%02d\n", Heure,Minute,Seconde);
-            last_time = current_time; 
-        }      
-    }
+                Menu_display(Image);
+                flag = 0;
+                reset = 1;
+            }     
+        }
 
     DEV_Module_Exit();
     return 0;
 }
 
-static void init_lcd(){
+void init_lcd(){
     printf("LCD init \n");
     LCD_1IN28_Init(HORIZONTAL);
     LCD_1IN28_Clear(WHITE);
@@ -95,7 +100,8 @@ static void init_lcd(){
     LCD_1IN28_Display(Image);
 }
 
-static void Update_time(){
+bool Update_time(struct repeating_timer *t){
+
     for(int i;i<3;i++){
         OldTabTime[i] = TabTime[i];
     }
@@ -108,26 +114,16 @@ static void Update_time(){
            TabTime[1] = 0;
            TabTime[0] = (TabTime[0] + 1) % 24; 
         }
+    // debug time
+    // printf("%d:%d:%d\n",TabTime[0],TabTime[1],TabTime[2]);
+    return true;
 }
 
-void Touch_INT_callback(uint gpio, uint32_t events)
-{
-    if (gpio == Touch_INT_PIN)
-    {
-        if (Touch_CTS816.mode == CST816S_Gesture_Mode)
-        {
-            uint8_t gesture = CST816S_Get_Gesture();
-            if(gesture == CST816S_Gesture_Long_Press){
-                if (flag == 0){
-                    flag = 1;
-                    reset = 1;
-                }
-                else{
-                    flag = 0;
-                    reset = 1;
-                }
-                
-            }
-    }
-}
+void Touch_INT_callback(uint gpio, uint32_t events){
+    CST816S_Get_Point();
+    uint8_t gesture = CST816S_Get_Gesture();
+    CTouch.x = Touch_CTS816.x_point;
+    CTouch.y = Touch_CTS816.y_point;
+    CTouch.gesture = gesture;
+    CTouch.isTouched = true;
 }
