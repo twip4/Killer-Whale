@@ -75,6 +75,7 @@ int main(void){
                 Horloge_display(Image,TabTime,OldTabTime,1);
             }
             if (flag == 1){
+                printf("Menu page \n");
                 Menu_display(Image);
                 flag = 0;
                 reset = 1;

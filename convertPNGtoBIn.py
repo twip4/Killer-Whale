@@ -1,7 +1,7 @@
 from PIL import Image
 import numpy as np
 
-img = Image.open('reglage.png')
+img = Image.open('img_montre/minuteur.png')
 im = np.asarray(img)
 
 R5 = (im[..., 0] >> 3).astype(np.uint16) << 11
