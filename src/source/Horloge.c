@@ -19,7 +19,7 @@ static void drawClockIndexes(int xCenter, int yCenter, int radius, int color , f
         // Convertir l'angle en radians
         double angle = i * (2 * PI / number);
         
-        // Calculer le point de départ (à l'intérieur du cercle)
+        // Calculer le point de départ é(à l'intérieur du cercle)
         int xStart = xCenter + (int)(radius * size * cos(angle));
         int yStart = yCenter + (int)(radius * size * sin(angle));
         
@@ -106,7 +106,7 @@ void Horloge_display(uint16_t *Image,uint32_t *TabTime,uint32_t *OldTabTime,u_in
         drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,TabTime[0],TabTime[1],TabTime[2],BLACK,RED);
     }
 
-    // mode avec l'heure en chiffre en plus 
+    // mode avec l'heure en chiffre en plus
     if(mode == 2){
         drawClockHands(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,TabTime[0],TabTime[1],TabTime[2],BLACK,RED);
         drawPhisicalHour(LCD_1IN28_HEIGHT/2,LCD_1IN28_HEIGHT/2,TabTime[0],TabTime[1],TabTime[2],BLACK,0);

@@ -4,7 +4,6 @@
 #include "Horloge.h"
 #include "DEV_Config.h"
 #include "GUI_Paint.h"
-#include "Debug.h"
 #include "CST816S.h"
 #include "hardware/adc.h"
 #include "QMI8658.h"
@@ -21,6 +20,8 @@ u_int32_t TabTime[3] = {15,30,0};
 u_int32_t OldTabTime[3];
 
 uint16_t *Image;
+
+uint32_t Imagesize;
 
 int main(void){
 
@@ -72,7 +73,7 @@ int main(void){
                     Horloge_init(Image);
                     reset = 0;
                 }
-                Horloge_display(Image,TabTime,OldTabTime,1);
+                Horloge_display(Image,TabTime,OldTabTime,2);
             }
             if (flag == 1){
                 printf("Menu page \n");
@@ -83,7 +84,7 @@ int main(void){
         }
 
     DEV_Module_Exit();
-    return 0;
+    return -1;
 }
 
 void init_lcd(){
@@ -91,13 +92,14 @@ void init_lcd(){
     LCD_1IN28_Init(HORIZONTAL);
     LCD_1IN28_Clear(WHITE);
     DEV_SET_PWM(100);
-    uint32_t Imagesize = LCD_1IN28_HEIGHT * LCD_1IN28_WIDTH * 2;
+    Imagesize = LCD_1IN28_HEIGHT * LCD_1IN28_WIDTH * 2;
     if ((Image = (uint16_t *)malloc(Imagesize)) == NULL)
     {
         printf("Failed to apply for black memory...\r\n");
         exit(0);
     }
     Paint_NewImage((uint8_t *)Image,LCD_1IN28.WIDTH, LCD_1IN28.HEIGHT, 0, WHITE);
+    Paint_SetRotate(ROTATE_180);
     LCD_1IN28_Display(Image);
 }
 

@@ -9,6 +9,8 @@
 #include "Images.h"
 #include "TouchData.h"
 
+void PointPos(u_int8_t nb,uint8_t pos);
+
 void Menu_display(uint16_t *Image){
 
     u_int8_t position = 0;
@@ -44,27 +46,34 @@ void Menu_display(uint16_t *Image){
         }
 
         switch (position) {
+            default:
+                continue;
             case 0:
                 if (click == 1){
                     running = 0;
                 }
                 Paint_DrawImage1(logo_horloge,(240-150)/2,(240-150)/2,150,150);
+                PointPos(positionMax,position);
                 LCD_1IN28_Display(Image);
                 break;
             case 1:
                 Paint_DrawImage1(logo_chrono,(240-150)/2,(240-150)/2,150,150);
+                PointPos(positionMax,position);
                 LCD_1IN28_Display(Image);
                 break;
             case 2:
                 Paint_DrawImage1(logo_minuteur,(240-150)/2,(240-150)/2,150,150);
+                PointPos(positionMax,position);
                 LCD_1IN28_Display(Image);
                 break;
             case 3:
                 Paint_DrawImage1(logo_alarme,(240-150)/2,(240-150)/2,150,150);
+                PointPos(positionMax,position);
                 LCD_1IN28_Display(Image);
                 break;
             case 4:
                 Paint_DrawImage1(logo_settings,(240-150)/2,(240-150)/2,150,150);
+                PointPos(positionMax,position);
                 LCD_1IN28_Display(Image);
                 break;
             }
@@ -73,3 +82,14 @@ void Menu_display(uint16_t *Image){
         }
     }
 
+void PointPos(u_int8_t nb,uint8_t pos){
+    // printf("nb : %d , pos : %d \n",nb,pos);
+    for(int i = 0; i <= nb;i++){
+        if (i == pos){
+            Paint_DrawCircle(98 + (i*12),210,4,BLACK,DOT_PIXEL_1X1, DRAW_FILL_FULL);
+        }
+        else{
+            Paint_DrawCircle(98+ (i*12),210,4,GRAY,DOT_PIXEL_1X1, DRAW_FILL_FULL);
+        }
+    }
+}
