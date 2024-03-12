@@ -20,8 +20,6 @@ Liste des fonctions de pentest :
 * Man in the middle
 * Scan nfc (copie)
 * Scan Radio (copie)
-* Brut force Wifi 
-* Si possible brouilleur
 
 
 [![logo.jpeg](docs/rendu/watch_2023-Nov-05_12-05-34PM-000_CustomizedView7822790882.png?fileId=103947#mimetype=image%2Fjpeg&hasPreview=true)](logo.jpeg?fileId=103947)
